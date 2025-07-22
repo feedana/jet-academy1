@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: left;
+ 
+}
+
+
+.card img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #003366;
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
