@@ -1,8 +1,10 @@
+
 body {
   font-family: sans-serif;
   background-color: #fdfdfd;
   margin: 0;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .container {
@@ -12,18 +14,17 @@ body {
   justify-content: center;
 }
 
+
 .card {
-  flex: 1 1 250px;
-  max-width: 300px;
+  flex: 1 1 calc(25% - 40px);
+  max-width: calc(25% - 40px);
   background: white;
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   text-align: left;
- 
 }
-
 
 .card img {
   width: 40px;
@@ -41,3 +42,18 @@ body {
   color: #555;
 }
 
+/* Tablet: 2 cards per row */
+@media (max-width: 1023px) {
+  .card {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+/* Mobile: 1 card per row */
+@media (max-width: 599px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
